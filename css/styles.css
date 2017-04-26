@@ -5,3 +5,14 @@ small.sub {
 .twilight-sparkle {
     color: #CC90DD;    
 }
+
+.idea-icon {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.reveal h1, 
+.reveal h2, 
+.reveal h3 {
+    text-transform: none;
+}
