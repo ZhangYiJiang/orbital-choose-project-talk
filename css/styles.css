@@ -27,10 +27,10 @@ small.sub {
     max-height: 60vh;
 }
 
-.pro {
-    
+.reveal section .pro {
+    color: #689f38;
 }
 
-.con {
-    
+.reveal section .con {
+    color: #c62828;
 }
