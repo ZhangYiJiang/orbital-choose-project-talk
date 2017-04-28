@@ -16,3 +16,21 @@ small.sub {
 .reveal h3 {
     text-transform: none;
 }
+
+.reveal h1 {
+    color: #666;
+}
+
+.reveal section img {
+    border: 0;
+    box-shadow: none;
+    max-height: 60vh;
+}
+
+.pro {
+    
+}
+
+.con {
+    
+}
