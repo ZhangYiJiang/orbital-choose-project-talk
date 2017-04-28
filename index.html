@@ -55,7 +55,7 @@
         <p>Capabilities? Limitations?</p>
         
         <aside class="notes">
-          ... you want to brainstorm for an idea, but you don't know what technology today is 
+          ...you want to brainstorm for an idea, but you don't know what the technology is 
           capable of.
         </aside>
       </section>
@@ -63,7 +63,8 @@
       <section>
         <img src="img/talk-to-people.png" 
              alt="Steven Universe reading a book titled 'How to Talk to People', 
-                  which consists of two pages - 1. Think of something to say, and 2. Say it.">
+                  which consists of two pages - 1. Think of what you want to say, and 
+                  2. Say it.">
         
         <aside class="notes">
           If only there was some simple guide to help you along...
@@ -230,7 +231,7 @@
           <p>Is it fun or easy to build? Is it expensive?</p>
           
           <aside class="notes">Often overlooked, your own experience as a developer
-            should also be taken into account.</aside>
+            does matter. A good development experience will keep you motivated.</aside>
         </section>
         
         <section>
@@ -238,12 +239,20 @@
           <p>What do existing apps use?</p> 
           <p>Why did they choose it, and should you try to differentiate?</p>
           
-          <aside class="notes"></aside>
+          <aside class="notes">Another frequently overlooked method for evaluating
+            just about anything is look at your competitors. Your ideas are most
+            likely original, so see what others before you have done (and if there aren't
+            maybe you should ask yourself <em>why</em> that's the case. You can learn
+            a lot from your competition - and not just to copy, but also to
+            <em>differentiate</em> yourself.</aside>
         </section>
         
         <section>
           <h3>Monetization</h3>
           <p>Can you make money?</p>
+
+          <aside class="notes">Probably not your top concern, but this is an important
+            consideration for real projects.</aside>
         </section>
         
         <section>
@@ -256,9 +265,12 @@
         <section>
           <h2>Web Apps</h2>
         </section>
+
+        <!-- Web Architecture notes -->
         <section>
           <h3>How websites work</h3>
         </section>
+        
         <section>
           <!-- TODO: Insert graphics -->
         </section>
@@ -268,23 +280,45 @@
           <p>HTML/CSS/JavaScript</p>
           
           <aside class="notes">The code that's sent to and evaluated by the browser is known 
-            as the 'frontend'. This is the <em>presentation</em> of your app - the thing
-            the user interacts with.</aside>
+            as the 'frontend'. This is the <em>presentation</em> of your site - the thing
+            the user sees and interacts with.</aside>
+        </section>
+        
+        <section>
+          <h3>Static website</h3>
+          <img src="img/freshman-home.jpg" alt="Freshman Orientation Project website">
+          
+          <aside class="notes">For simple websites, where the content (HTML) does not change,
+            this is actually all you need. An example of this is NUS Computing's FOP website. 
+            But this isn't going to work for most apps - they need to take in and store user
+            inputs. It could be something as simple as ratings, likes, up to entire
+            websites built on user generated content such as wikis. For this, you need a...</aside>
         </section>
         
         <section>
           <h3>Backend</h3>
-          <p>Code running on the server</p>
+          <p>PHP, Ruby, Python, JavaScript...</p>
           
-          <aside class="notes">Anything running on the server is known as the backend
-            </aside>
+          <aside class="notes">Backend. Anything running on the server is known as the backend.
+            In traditional web applications the server will handle the business logic,
+            data persistence, as well as translating the data into HTML that the client 
+            will use.</aside>
+        </section>
+        
+        <section>
+          <h3>Web Applications</h3>
+          
+          
         </section>
         
         <section>
           <h3>Single Page Application</h3>
           
+          <aside class="notes">There's also a new breed of web applications that shifts
+            more of the responsibility to the client. </aside>
         </section>
-        
+
+        <!-- Web platform evaluation -->
         <section>
           <h3 class="pro">Pros</h3>
           <p><strong>Reach</strong> - Easily cross platform</p>
@@ -307,27 +341,105 @@
           <h3 class="pro">Pros</h3>
           <p><strong>Easy to learn</strong></p>
           
-          <aside class="notes"></aside>
+          <aside class="notes">This is subjective, but in my opinion, HTML and CSS at least 
+            are very easy to learn. That's all you need for a simple website. And if you
+            want your website to do more, simply </aside>
         </section>
         
         <section>
           <h3 class="pro">Pros</h3>
-          <p><strong>Easy to develop</strong></p>
+          <p><strong>Easy to develop</strong> - No compilation, wide choice of languages</p>
+
+          <aside class="notes">While native apps usually use compiled languages
+            like Java and Swift, web apps are mostly written in interpreted languages.
+            This means you can refresh your browser, and the changes made to the
+            code are reflected immediately in your website. In addition, remember that
+            the </aside>
+        </section>
+
+        <section>
+          <h3 class="con">Cons</h3>
+          <p><strong>No direct hardware access</strong> - weaker API, poor performance</p>
+
+          <aside class="notes">The most obvious downside for web apps is the lack of 
+            native hardware access. 
+            What this translates into in practice is that performance sensitive 
+            applications such as games should not built as web apps. </aside>
+        </section>
+        
+        <section>
+          <h3 class="con">Cons</h3>
+          <p>Weaker and inconsistent API</p>
+          <img src="img/caniuse-webrtc.png" alt="caniuse.com showing inconsistent support from Safari for WebRTC">
+          
+          <aside class="notes">You're building on top of the browser, not the
+            native platform itself. That means what you get access to is generally 
+            a subset of what native apps have access to. For example,
+            the HTML5 WebRTC API does not give you camera FOV, which limits their
+            application for AR.</aside>
+        </section>
+        
+        <section>
+          <h3 class="con">Cons</h3>
+          <p>Poor performance</p>
+
+          <aside class="notes">The browser itself also adds overhead. While performance
+            has improved significantly, you still don't want to build performance
+            sensitive apps such as games in the browser.</aside>
+        </section>
+        
+        <section>
+          <h3 class="con">Cons</h3>
+          <p>Non-native UI</p>
+          
+          <img src="img/ios-blur.jpg" alt="">
 
           <aside class="notes"></aside>
         </section>
 
         <section>
           <h3 class="con">Cons</h3>
-          <p><strong>No direct hardware access</strong></p>
+          <p><strong>Fast changing</strong> - short knowledge lifespan</p>
 
-          <aside class="notes"></aside>
+          <aside class="notes">The web moves <em>really</em> fast. What you learned
+            here may not be relevant in a few year's time. </aside>
         </section>
+        
         <section>
-          <h3 class="con">Cons</h3>
-          <p><strong>Non-native UI</strong></p>
-
-          <aside class="notes"></aside>
+          <h3>Examples!</h3>
+        </section>
+        
+        <section>
+          <p>Image compression! (Sort of)</p>
+          <img src="img/image-size-slayer.jpg" alt="">
+        </section>
+        
+        <section>
+          <p>Augmented reality!</p>
+          
+        </section>
+        
+        <section>
+          <p>Module planning!</p>
+          <a href="http://v3.nusmods.com"><img src="img/nusmods.png" alt=""></a>
+        </section>
+        
+        <section>
+          <p>Console emulation!</p>
+          
+          
+        </section>
+        
+        <section>
+          <h3>In summary</h3>
+          
+        </section>
+      </section>
+      
+      <!-- Mobile -->
+      <section>
+        <section>
+          <h2>Mobile Apps</h2>
         </section>
       </section>
     </div>
