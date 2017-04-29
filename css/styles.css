@@ -1,5 +1,5 @@
 small.sub {
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .twilight-sparkle {
@@ -33,4 +33,8 @@ small.sub {
 
 .reveal section .con {
     color: #c62828;
+}
+
+.reveal td {
+    vertical-align: top;
 }

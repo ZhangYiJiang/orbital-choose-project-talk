@@ -94,7 +94,7 @@
           <p><strong>10 years</strong> in web development <br>
             <small class="sub">knows how to fix the double margin bug</small></p>
           <p><strong class="twilight-sparkle">Twilight Sparkle</strong> is best pony <br>
-            <small class="sub">Duh</small></p>
+            <small class="sub">duh</small></p>
         </section>
         <section>
           <!-- TODO: Insert some pretty pictures here -->
@@ -147,21 +147,57 @@
         </section>
         
         <section>
-          <ul>
-            <li>Provides structure</li>
-            <li>Simplifies common tasks</li>
-          </ul>
+          <pre><code>app
+  ├── Console
+  │   └── Commands
+  ├── Events
+  ├── Exceptions
+  ├── Http
+  │   ├── Composers
+  │   ├── Controllers
+  │   │   └── Auth
+  │   ├── Middleware
+  │   └── Requests
+  ├── Jobs
+  ├── Listeners
+  ├── Models
+  ├── Policies
+  └── Providers</code></pre>
+          <p>Provides structure</p>
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <img src="img/laravel-features.png" alt="">
+          <p>Simplifies common tasks</p>
           <aside class="notes"></aside>
         </section>
 
         <section>
           <h3>API <br> 
             <small class="sub">aka. Application Programming Interface</small></h3>
-          <p>Used to interact with third party services</p>
+          <p>Interact with third party services</p>
         </section>
         
         <section>
-          
+          <a href="https://developers.facebook.com/tools/explorer/">
+            <img src="img/facebook-graph-explorer.png" alt="">
+            <p>Walk the social graph</p>
+          </a>
+        </section>
+        
+        <section>
+          <a href="https://developers.google.com/maps/documentation/">
+            <img src="img/google-maps-api.png" alt="">
+            <p>Show maps and directions</p>
+          </a>
+        </section>
+        
+        <section>
+          <a href="https://http.cat/">
+            <img src="img/http-cat.png" alt="">
+            <p>Display cats as HTTP status code</p>
+          </a>
         </section>
       </section>
       
@@ -315,7 +351,7 @@
           <h3>Single Page Application</h3>
           
           <aside class="notes">There's also a new breed of web applications that shifts
-            more of the responsibility to the client. </aside>
+            more of the responsibility to the client.</aside>
         </section>
 
         <!-- Web platform evaluation -->
@@ -339,11 +375,12 @@
         
         <section>
           <h3 class="pro">Pros</h3>
-          <p><strong>Easy to learn</strong></p>
+          <p><strong>Easy to learn</strong> - start simple, learn as you go along</p>
           
           <aside class="notes">This is subjective, but in my opinion, HTML and CSS at least 
             are very easy to learn. That's all you need for a simple website. And if you
-            want your website to do more, simply </aside>
+            want your website to do more, simply pick up more skills as you go along.
+            Your old skills will still come in handy.</aside>
         </section>
         
         <section>
@@ -354,7 +391,8 @@
             like Java and Swift, web apps are mostly written in interpreted languages.
             This means you can refresh your browser, and the changes made to the
             code are reflected immediately in your website. In addition, remember that
-            the </aside>
+            for backends you can choose pretty much any language you're comfortable with
+            and there will be a web framework for it.</aside>
         </section>
 
         <section>
@@ -362,9 +400,9 @@
           <p><strong>No direct hardware access</strong> - weaker API, poor performance</p>
 
           <aside class="notes">The most obvious downside for web apps is the lack of 
-            native hardware access. 
-            What this translates into in practice is that performance sensitive 
-            applications such as games should not built as web apps. </aside>
+            native hardware access. Native refers to the actual hardware the browser 
+            your user is using - be it a desktop computer, a tablet, or a mobile phone.
+            You're building on top of the browser, not the native platform itself.</aside>
         </section>
         
         <section>
@@ -372,8 +410,7 @@
           <p>Weaker and inconsistent API</p>
           <img src="img/caniuse-webrtc.png" alt="caniuse.com showing inconsistent support from Safari for WebRTC">
           
-          <aside class="notes">You're building on top of the browser, not the
-            native platform itself. That means what you get access to is generally 
+          <aside class="notes">That means what you get access to is generally 
             a subset of what native apps have access to. For example,
             the HTML5 WebRTC API does not give you camera FOV, which limits their
             application for AR.</aside>
@@ -381,9 +418,10 @@
         
         <section>
           <h3 class="con">Cons</h3>
-          <p>Poor performance</p>
+          <p>(Relatively) poor performance</p>
 
-          <aside class="notes">The browser itself also adds overhead. While performance
+          <aside class="notes">The browser itself also adds overhead. While most
+            apps don't <em>need</em> every CPU cycle their device can give, and performance
             has improved significantly, you still don't want to build performance
             sensitive apps such as games in the browser.</aside>
         </section>
@@ -394,19 +432,25 @@
           
           <img src="img/ios-blur.jpg" alt="">
 
-          <aside class="notes"></aside>
+          <aside class="notes">Your UI also won't look like the native platform's.
+            Sure, you can <em>mimic</em> the native UI, but that usually a lost
+            cause - you can never match the efficiency of native UI, and some
+            UI elements like the blur and vibrancy effect on iOS is absolutely
+            impossible to achieve in the browser.</aside>
         </section>
 
         <section>
           <h3 class="con">Cons</h3>
           <p><strong>Fast changing</strong> - short knowledge lifespan</p>
 
-          <aside class="notes">The web moves <em>really</em> fast. What you learned
-            here may not be relevant in a few year's time. </aside>
+          <aside class="notes">The web moves fast - <em>really</em> fast. That's good,
+            because you get better technology, better performance, but it also means 
+            what you learned here may not be relevant in a few year's time.</aside>
         </section>
         
         <section>
           <h3>Examples!</h3>
+          <p>of things which you might not think was possible with web apps</p>
         </section>
         
         <section>
@@ -416,7 +460,7 @@
         
         <section>
           <p>Augmented reality!</p>
-          
+          <img src="img/pinpoint.jpg" alt="">
         </section>
         
         <section>
@@ -426,13 +470,33 @@
         
         <section>
           <p>Console emulation!</p>
-          
-          
+          <a href="https://endrift.github.io/gbajs/"><img src="img/gbajs.jpg" alt=""></a>
         </section>
         
         <section>
-          <h3>In summary</h3>
-          
+          <table>
+            <tr>
+              <th class="pro">Pros</th>
+              <th class="con">Cons</th>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>Cross platform</li>
+                  <li>Accessible</li>
+                  <li>Easy to learn</li>
+                  <li>Easy to develop for</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Poor(er) performance</li>
+                  <li>Non-native UI and API</li>
+                  <li>Fast moving</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
         </section>
       </section>
       
@@ -440,6 +504,22 @@
       <section>
         <section>
           <h2>Mobile Apps</h2>
+        </section>
+        
+        <section>
+          <h3>Native</h3>
+          <p>Android + Java</p>
+          <p>iOS + Swift</p>
+        </section>
+        
+        <section>
+          <h3>Cross Platform</h3>
+          <p>Xamarin + C#</p>
+          <p>React Native + JavaScript</p>
+        </section>
+        
+        <section>
+          
         </section>
       </section>
     </div>
