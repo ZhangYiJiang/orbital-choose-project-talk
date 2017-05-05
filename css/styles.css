@@ -38,3 +38,7 @@ small.sub {
 .reveal td {
     vertical-align: top;
 }
+
+.side-by-side {
+    display: flex;
+}
