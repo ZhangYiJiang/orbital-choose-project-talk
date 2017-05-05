@@ -541,7 +541,9 @@
           <h3 class="pro">Pros</h3>
           <p><strong>Native Platform</strong> - Hardware access</p>
 
-          <aside class="notes"></aside>
+          <aside class="notes">
+            
+          </aside>
         </section>
 
         <section>
@@ -572,7 +574,7 @@
         </section>
         
         <section>
-            <pre><code>let cannonFiringRangeGradient: CGGradient = {
+            <pre class="code-small"><code>let cannonFiringRangeGradient: CGGradient = {
     let colors = [UIColor.white.withAlphaComponent(0.3).cgColor,
                   UIColor.white.withAlphaComponent(0).cgColor]
     return CGGradient(colorsSpace: nil, colors: colors as CFArray, locations: nil)!
@@ -674,6 +676,12 @@ firingRange.image = {
             <li><span class="con">Con</span>: Similar to mobile apps</li>
           </ul>
         </section>
+        
+        <section>
+          <section>
+            <h2>Closing thoughts</h2>
+          </section>
+        </section>
       </section>
     </div>
   </div>
@@ -683,14 +691,14 @@ firingRange.image = {
   <script>
     var secret = null;
     var dependencies = [
-      { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true }
+      { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+      { src: 'reveal.js/plugin/notes/notes.js', async: true }
     ];
     
     if (window.location.search.indexOf('master') !== -1) {
       secret = window.prompt("Enter presentation socket secret");
       
       dependencies.push({ src: 'reveal.js/plugin/multiplex/master.js', async: true });
-      dependencies.push({ src: 'reveal.js/plugin/notes/master.js', async: true });
     } else {
       dependencies.push({ src: 'reveal.js/plugin/multiplex/client.js', async: true });
     }

@@ -42,3 +42,7 @@ small.sub {
 .side-by-side {
     display: flex;
 }
+
+.reveal pre.code-small {
+    font-size: .4em;
+ }
