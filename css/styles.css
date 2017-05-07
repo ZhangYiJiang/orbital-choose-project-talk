@@ -1,3 +1,19 @@
+.reveal strong {
+    position: relative;
+}
+
+.reveal strong:after {
+    content: '';
+    
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    left: 0;
+    border-bottom: 3px solid;
+    
+    opacity: 0.5;
+}
+
 small.sub {
     opacity: 0.6;
 }
