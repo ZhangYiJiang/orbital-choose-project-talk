@@ -43,6 +43,41 @@ small.sub {
     display: flex;
 }
 
+.reveal section .height-half {
+    height: 30vh;
+}
+
 .reveal pre.code-small {
     font-size: .4em;
  }
+
+.reveal iframe {
+    width: 100%;
+    height: 56vh;
+}
+
+.reveal .cs3217-video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reveal .cs3217-video-container div {
+    overflow: hidden;
+    width: 12vw;
+    margin-right: 20px;
+}
+
+.reveal .cs3217-video-container .cs3217-video-double {
+    width: 28vw;
+}
+
+.reveal .cs3217-video-container video {
+    width: 28vw;
+    max-width: initial;
+    margin-left: -8vw;
+}
+
+.reveal .cs3217-video-double video {
+    margin-left: 0;
+}

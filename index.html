@@ -550,15 +550,20 @@
         </section>
         
         <section>
-          <div class="side-by-side">
-            <img src="img/android-widget.jpg" alt="Android widgets">
-            <img src="img/ios-app-extensions.png" alt="iOS App Extensions">
-          </div>
+          <img class="height-half" src="img/android-widget.jpg" alt="Android widgets">
+          <img class="height-half" src="img/ios-app-extensions.png" alt="iOS App Extensions">
         </section>
 
         <section>
           <h3 class="pro">Pros</h3>
           <p><strong>Native Platform</strong> - Hardware access</p>
+          
+          <ul>
+            <li>Advanced camera options <br> (White balance, aperture, FOV)</li>
+            <li>Filesystem access</li>
+            <li>Fingerprint readers</li>
+            <li>Game controllers</li>
+          </ul>
 
           <aside class="notes">
             
@@ -653,13 +658,22 @@ firingRange.image = {
             <li>Any platform</li>
             <li>Native app or <a href="https://unity3d.com/">Unity</a></li>
             <li>For experienced developers</li>
-            <li>(Unless you're making something simple or unconventional)</li>
+            <li>(Unless it's simple or unconventional)</li>
           </ul>
         </section>
         
         <section>
-          <iframe src="https://www.youtube.com/embed/7XjNR7S1nzI" 
-                  frameborder="0" allowfullscreen></iframe>
+          <a class="cs3217-video-container" href="https://www.youtube.com/v/7XjNR7S1nzI">
+            <div>
+              <video src="img/3217-1.mp4" autoplay loop></video>
+            </div>
+            <div>
+              <video src="img/3217-2.mp4" autoplay loop></video>
+            </div>
+            <div class="cs3217-video-double">
+              <video src="img/3217-3.mp4" autoplay loop></video>
+            </div>
+          </a>
         </section>
         
         <section>
@@ -700,7 +714,7 @@ firingRange.image = {
         
         <section>
           <ul>
-            <li>Instant messaging apps as platform - 
+            <li>Instant messaging apps as platform <br>
               <a href="https://core.telegram.org/bots/api">Telegram</a>, 
               <a href="https://developers.facebook.com/docs/messenger-platform">Facebook</a></li>
             <li>JavaScript</li>
@@ -745,19 +759,28 @@ firingRange.image = {
       
       <section>
         <section>
-          <section>
-            <h2>Closing thoughts</h2>
-          </section>
-          
-          <section>
-            <p>Consider carefully</p>
-            <small class="sub">These choices will affect your entire Orbital project</small>
-          </section>
-          
-          <section>
-            <p>But choose quickly</p>
-            <small class="sub">Making <em>a</em> decision is more important than </small>
-          </section>
+          <h2>Closing thoughts</h2>
+        </section>
+        
+        <section>
+          <p>Consider carefully</p>
+          <small class="sub">These choices will affect your entire Orbital project</small>
+        </section>
+        
+        <section>
+          <p>But choose quickly</p>
+          <small class="sub">Making <em>any</em> decision is more important than 
+            making the <em>best</em> decision</small>
+        </section>
+        
+        <section>
+          <small class="sub">Most importantly</small>
+          <p>Have fun!</p>
+        </section>
+        
+        <section>
+          <p>Thank you!</p>
+          <small class="sub">Any questions?</small>
         </section>
       </section>
     </div>
@@ -776,7 +799,7 @@ firingRange.image = {
       secret = window.prompt("Enter presentation socket secret");
       
       dependencies.push({ src: 'reveal.js/plugin/multiplex/master.js', async: true });
-    } else {
+    } else if (window.location.search.indexOf('noclient') !== -1) {
       dependencies.push({ src: 'reveal.js/plugin/multiplex/client.js', async: true });
     }
     
