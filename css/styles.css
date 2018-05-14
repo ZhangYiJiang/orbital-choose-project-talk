@@ -97,3 +97,12 @@ small.sub {
 .reveal .cs3217-video-double video {
     margin-left: 0;
 }
+
+.fixed-link {
+  position: fixed;
+  font-size: 1rem;
+  left: 5px;
+  top: 5px;
+  color: #6ca0e8;
+  text-decoration: none;
+}
